@@ -1,0 +1,14 @@
+<svg width="1200" height="1500" viewBox="0 0 1200 1500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1500" fill="#0B0B0D"/>
+  <rect x="90" y="120" width="1020" height="1260" rx="64" fill="#14151A" stroke="#C8A15A" stroke-width="2"/>
+  <circle cx="360" cy="520" r="180" fill="#C8A15A" fill-opacity="0.18"/>
+  <circle cx="820" cy="860" r="220" fill="#C8A15A" fill-opacity="0.12"/>
+  <g transform="translate(340 620)" stroke="#F5F5F7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M40 0L160 120"/>
+    <path d="M160 0L40 120"/>
+    <circle cx="30" cy="140" r="24" fill="#0B0B0D"/>
+    <circle cx="170" cy="140" r="24" fill="#0B0B0D"/>
+  </g>
+  <text x="50%" y="72%" text-anchor="middle" fill="#F5F5F7" font-size="36" font-family="'Manrope', sans-serif" letter-spacing="6">EQUIPO ASF</text>
+  <text x="50%" y="76%" text-anchor="middle" fill="#C8A15A" font-size="14" font-family="'Manrope', sans-serif" letter-spacing="4">PRECISIÓN & ESTILO</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg width="1200" height="1500" viewBox="0 0 1200 1500" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="1500" fill="#0B0B0D"/>
+  <rect x="80" y="120" width="1040" height="1260" rx="64" fill="#14151A" stroke="#C8A15A" stroke-width="2"/>
+  <circle cx="820" cy="520" r="220" fill="#C8A15A" fill-opacity="0.2"/>
+  <circle cx="520" cy="900" r="200" fill="#C8A15A" fill-opacity="0.12"/>
+  <path d="M320 360H880" stroke="#C8A15A" stroke-width="3" stroke-linecap="round"/>
+  <path d="M360 430H840" stroke="#F5F5F7" stroke-width="2" stroke-linecap="round" stroke-opacity="0.5"/>
+  <g transform="translate(360 520)" stroke="#F5F5F7" stroke-width="6" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M40 0L160 120"/>
+    <path d="M160 0L40 120"/>
+    <circle cx="30" cy="140" r="24" fill="#0B0B0D"/>
+    <circle cx="170" cy="140" r="24" fill="#0B0B0D"/>
+  </g>
+  <g transform="translate(680 560)">
+    <rect x="0" y="0" width="180" height="220" rx="24" fill="#0B0B0D" stroke="#C8A15A" stroke-width="3"/>
+    <path d="M30 60H150" stroke="#F5F5F7" stroke-width="6" stroke-linecap="round"/>
+    <path d="M30 100H150" stroke="#F5F5F7" stroke-width="6" stroke-linecap="round"/>
+    <path d="M30 140H150" stroke="#F5F5F7" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <text x="50%" y="72%" text-anchor="middle" fill="#F5F5F7" font-size="40" font-family="'Manrope', sans-serif" letter-spacing="6">BARBERÍA ASF</text>
+  <text x="50%" y="76%" text-anchor="middle" fill="#C8A15A" font-size="16" font-family="'Manrope', sans-serif" letter-spacing="4">ESTILO PREMIUM</text>
+</svg>
