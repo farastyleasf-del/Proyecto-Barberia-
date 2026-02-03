@@ -43,12 +43,14 @@ const blogPreview = [
   {
     title: "Guía definitiva para cuidar tu barba",
     date: "12 Ago 2024",
-    excerpt: "Rutina diaria, productos clave y tips de expertos para un look impecable."
+    excerpt: "Rutina diaria, productos clave y tips de expertos para un look impecable.",
+    image: "/images/barberia/blog-1.svg"
   },
   {
     title: "Tendencias de cortes premium 2024",
     date: "05 Ago 2024",
-    excerpt: "Lo último en estilos masculinos con inspiración editorial."
+    excerpt: "Lo último en estilos masculinos con inspiración editorial.",
+    image: "/images/barberia/blog-2.svg"
   }
 ];
 
@@ -90,10 +92,10 @@ export default function HomePage() {
                 Reservar cita
               </Link>
               <Link
-                href="/admin"
+                href="/#contacto"
                 className="rounded-full border border-white/20 px-6 py-3 text-xs font-semibold uppercase tracking-[0.25em] text-white/80"
               >
-                Ir al panel admin
+                Contacto
               </Link>
             </div>
             <div className="flex items-center gap-6 text-xs uppercase tracking-[0.3em] text-white/60">
@@ -104,8 +106,8 @@ export default function HomePage() {
           <div className="relative z-10">
             <div className="overflow-hidden rounded-3xl border border-white/10 bg-graphite/70 shadow-soft">
               <Image
-                src="/images/hero-premium.svg"
-                alt="Ambiente premium"
+                src="/images/barberia/hero.svg"
+                alt="Ambiente premium de barbería"
                 width={520}
                 height={640}
                 className="h-full w-full object-cover"
@@ -144,8 +146,8 @@ export default function HomePage() {
         </div>
         <div className="overflow-hidden rounded-3xl border border-white/10">
           <Image
-            src="/images/services-premium.svg"
-            alt="Servicios premium"
+            src="/images/barberia/services.svg"
+            alt="Servicios premium de barbería"
             width={1100}
             height={420}
             className="h-full w-full object-cover"
@@ -177,8 +179,8 @@ export default function HomePage() {
         </div>
         <div className="overflow-hidden rounded-3xl border border-white/10">
           <Image
-            src="/images/team-premium.svg"
-            alt="Equipo premium"
+            src="/images/barberia/team.svg"
+            alt="Equipo premium de barbería"
             width={540}
             height={640}
             className="h-full w-full object-cover"
@@ -216,6 +218,15 @@ export default function HomePage() {
               key={post.title}
               className="rounded-3xl border border-white/10 bg-graphite/70 p-6 shadow-soft"
             >
+              <div className="overflow-hidden rounded-2xl border border-white/10">
+                <Image
+                  src={post.image}
+                  alt={post.title}
+                  width={520}
+                  height={300}
+                  className="h-48 w-full object-cover"
+                />
+              </div>
               <p className="text-xs uppercase tracking-[0.3em] text-gold">{post.date}</p>
               <h3 className="mt-4 text-xl font-semibold">{post.title}</h3>
               <p className="mt-3 text-sm text-white/60">{post.excerpt}</p>
@@ -235,6 +246,31 @@ export default function HomePage() {
           >
             Ir al blog
           </Link>
+        </div>
+      </section>
+
+      <section id="contacto" className="mx-auto max-w-6xl space-y-8 px-6">
+        <SectionTitle
+          eyebrow="Contacto"
+          title="Agenda o visítanos cuando quieras"
+          description="Estamos listos para recibirte con una experiencia premium, puntual y dedicada."
+        />
+        <div className="grid gap-6 md:grid-cols-3">
+          <div className="rounded-3xl border border-white/10 bg-graphite/70 p-6 shadow-soft">
+            <p className="text-xs uppercase tracking-[0.3em] text-gold">Ubicación</p>
+            <p className="mt-3 text-base font-semibold">Av. Principal 123</p>
+            <p className="text-sm text-white/60">Zona Norte · Ciudad Premium</p>
+          </div>
+          <div className="rounded-3xl border border-white/10 bg-graphite/70 p-6 shadow-soft">
+            <p className="text-xs uppercase tracking-[0.3em] text-gold">Reserva</p>
+            <p className="mt-3 text-base font-semibold">+57 320 000 0000</p>
+            <p className="text-sm text-white/60">WhatsApp & llamadas</p>
+          </div>
+          <div className="rounded-3xl border border-white/10 bg-graphite/70 p-6 shadow-soft">
+            <p className="text-xs uppercase tracking-[0.3em] text-gold">Horario</p>
+            <p className="mt-3 text-base font-semibold">Lun - Sáb</p>
+            <p className="text-sm text-white/60">09:00 - 20:00</p>
+          </div>
         </div>
       </section>
     </div>

@@ -1,0 +1,7 @@
+<svg width="900" height="600" viewBox="0 0 900 600" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="600" fill="#0B0B0D"/>
+  <rect x="40" y="40" width="820" height="520" rx="48" fill="#15161B" stroke="#C8A15A" stroke-width="2"/>
+  <circle cx="250" cy="300" r="120" fill="#C8A15A" fill-opacity="0.18"/>
+  <text x="60%" y="50%" text-anchor="middle" fill="#F5F5F7" font-size="26" font-family="'Manrope', sans-serif" letter-spacing="4">CUIDADO DE BARBA</text>
+  <text x="60%" y="56%" text-anchor="middle" fill="#C8A15A" font-size="12" font-family="'Manrope', sans-serif" letter-spacing="3">RUTINA DIARIA</text>
+</svg>
