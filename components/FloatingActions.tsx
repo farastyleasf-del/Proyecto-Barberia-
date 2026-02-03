@@ -13,7 +13,7 @@ export default function FloatingActions() {
       {isChatOpen ? (
         <div className="w-72 overflow-hidden rounded-3xl border border-white/10 bg-graphite/90 shadow-soft backdrop-blur">
           <div className="flex items-center justify-between border-b border-white/10 px-4 py-3">
-            <p className="text-xs uppercase tracking-[0.3em] text-gold">Chatbot ASF</p>
+            <p className="text-xs uppercase tracking-[0.3em] text-gold">Chatbot Dinasty</p>
             <button
               type="button"
               className="text-xs uppercase tracking-[0.3em] text-white/60"

@@ -72,9 +72,9 @@ export default function HomePage() {
                 />
               </div>
               <div className="text-left">
-                <p className="text-xs uppercase tracking-[0.4em] text-gold">ASF</p>
+                <p className="text-xs uppercase tracking-[0.4em] text-gold">Dinasty</p>
                 <p className="text-sm uppercase tracking-[0.3em] text-white/70">
-                  Dinasty barber ASF
+                  barber ASF
                 </p>
               </div>
             </div>

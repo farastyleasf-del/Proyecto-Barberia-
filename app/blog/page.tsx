@@ -36,7 +36,7 @@ export default function BlogPage() {
       <SectionTitle
         eyebrow="Blog"
         title="Consejos y tendencias para un estilo premium"
-        description="Explora artículos curados por el equipo ASF para elevar tu rutina de cuidado personal."
+        description="Explora artículos curados por el equipo Dinasty barber ASF para elevar tu rutina de cuidado personal."
       />
       <div className="space-y-6">
         {posts.map((post) => (
@@ -73,7 +73,7 @@ export default function BlogPage() {
           <p className="text-xs uppercase tracking-[0.4em] text-gold">Califícanos</p>
           <h2 className="text-2xl font-semibold">Tu opinión impulsa nuestra experiencia premium.</h2>
           <p className="text-sm text-white/60">
-            Cuéntanos cómo fue tu visita y ayuda a la comunidad ASF a elegir la mejor atención.
+            Cuéntanos cómo fue tu visita y ayuda a la comunidad Dinasty barber ASF a elegir la mejor atención.
           </p>
         </div>
         <div className="mt-6 flex flex-wrap gap-3">

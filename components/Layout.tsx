@@ -28,8 +28,8 @@ export default function Layout({ children }: { children: ReactNode }) {
               />
             </div>
             <div className="leading-tight">
-              <p className="text-xs uppercase tracking-[0.5em] text-gold">ASF</p>
-              <p className="text-lg font-semibold tracking-[0.2em]">Dinasty barber ASF</p>
+              <p className="text-xs uppercase tracking-[0.5em] text-gold">Dinasty</p>
+              <p className="text-lg font-semibold tracking-[0.2em]">barber ASF</p>
             </div>
           </Link>
           <nav className="hidden items-center gap-8 text-xs uppercase tracking-[0.3em] text-white/70 md:flex">
@@ -81,7 +81,7 @@ export default function Layout({ children }: { children: ReactNode }) {
             </div>
           </div>
           <div className="flex flex-col gap-2 text-xs text-white/40 md:flex-row md:items-center md:justify-between">
-            <p>© 2024 ASF Barbería Premium. Todos los derechos reservados.</p>
+            <p>© 2024 Dinasty barber ASF. Todos los derechos reservados.</p>
             <p>Diseñado para una experiencia moderna, elegante y confiable.</p>
           </div>
         </div>
