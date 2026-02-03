@@ -1,21 +1,4 @@
 import Link from "next/link";
-
-
-export default function HomePage() {
-  return (
-    <main className="mx-auto flex min-h-[70vh] max-w-4xl flex-col justify-center gap-6 px-6 py-16">
-      <p className="text-xs uppercase tracking-[0.4em] text-gold">Barbería premium</p>
-      <h1 className="text-4xl font-semibold">Barbería Premium</h1>
-      <p className="text-base text-white/70">
-        Bienvenido. Agenda tu próxima cita con una experiencia rápida, clara y elegante.
-      </p>
-      <Link
-        href="/admin"
-        className="w-fit rounded-full border border-gold px-6 py-3 text-xs font-semibold uppercase tracking-[0.25em] text-gold"
-      >
-        Ir al panel admin
-      </Link>
-    </main>
 import SectionTitle from "../components/SectionTitle";
 import StepCard from "../components/StepCard";
 
@@ -25,12 +8,15 @@ export default function HomePage() {
       <section className="relative overflow-hidden border-b border-white/10">
         <div className="mx-auto flex max-w-6xl flex-col gap-12 px-6 py-20 md:flex-row md:items-center">
           <div className="space-y-6">
-            <p className="text-xs uppercase tracking-[0.5em] text-gold">Barbería premium</p>
+            <p className="text-xs uppercase tracking-[0.5em] text-gold">
+              Barbería premium
+            </p>
             <h1 className="text-4xl font-semibold leading-tight md:text-5xl">
               Reserva tu cita en menos de un minuto.
             </h1>
             <p className="max-w-xl text-base text-white/70">
-              Un servicio elegante, rápido y confiable. Selecciona tu servicio, elige tu barbero y confirma al instante.
+              Un servicio elegante, rápido y confiable. Selecciona tu servicio,
+              elige tu barbero y confirma al instante.
             </p>
             <div className="flex flex-wrap gap-4">
               <Link
@@ -46,18 +32,26 @@ export default function HomePage() {
                 Ver servicios
               </Link>
             </div>
-            <p className="text-sm text-white/50">Calificación 4.9 · Más de 1,200 clientes satisfechos.</p>
+            <p className="text-sm text-white/50">
+              Calificación 4.9 · Más de 1,200 clientes satisfechos.
+            </p>
           </div>
+
           <div className="rounded-3xl border border-white/10 bg-graphite p-8 shadow-soft">
             <div className="space-y-4">
-              <p className="text-xs uppercase tracking-[0.4em] text-gold">Agenda rápida</p>
+              <p className="text-xs uppercase tracking-[0.4em] text-gold">
+                Agenda rápida
+              </p>
               <div className="space-y-2 text-sm text-white/70">
                 <p>1. Selecciona servicio.</p>
                 <p>2. Elige barbero o asignación automática.</p>
                 <p>3. Escoge fecha y hora disponibles.</p>
                 <p>4. Confirma y agrega a tu calendario.</p>
               </div>
-              <Link href="/booking/service" className="inline-flex items-center text-sm font-semibold text-gold">
+              <Link
+                href="/booking/service"
+                className="inline-flex items-center text-sm font-semibold text-gold"
+              >
                 Comenzar ahora →
               </Link>
             </div>
@@ -77,7 +71,11 @@ export default function HomePage() {
             { title: "Barba & ritual", description: "30 min · $15" },
             { title: "Combo elite", description: "75 min · $30" }
           ].map((item) => (
-            <StepCard key={item.title} title={item.title} description={item.description} />
+            <StepCard
+              key={item.title}
+              title={item.title}
+              description={item.description}
+            />
           ))}
         </div>
       </section>
@@ -95,7 +93,11 @@ export default function HomePage() {
               { name: "Lucas Pérez", role: "Barba premium" },
               { name: "Sofía Herrera", role: "Diseño moderno" }
             ].map((member) => (
-              <StepCard key={member.name} title={member.name} description={member.role} />
+              <StepCard
+                key={member.name}
+                title={member.name}
+                description={member.role}
+              />
             ))}
           </div>
         </div>

@@ -3,5 +3,5 @@
   "buildCommand": "npm run build",
   "outputDirectory": ".next",
   "installCommand": "npm install",
-  "devCommand": "npm run dev"
+  "ignoreCommand": "test -d apps/api && exit 1 || exit 0"
 }
