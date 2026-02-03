@@ -1,19 +1,116 @@
-# Sistema Web de Agendamiento – Barbería Premium
+# 💈 Dinasty Barber ASF – Sistema de Reservas Premium
 
-Proyecto base para construir una experiencia de reserva premium, rápida y confiable para una barbería.
+Aplicación web moderna y elegante para gestión de citas en barbería premium, con panel administrativo completo.
 
-## Objetivos clave
-- Reservar en menos de 1 minuto con un flujo claro y sin fricción.
-- Imagen moderna, elegante y profesional.
-- Preparado para escalabilidad e integración futura con IA.
+## 🚀 Cómo Ejecutar la Aplicación
 
-## Stack recomendado
-- **Frontend:** Next.js (React) + Tailwind CSS + Headless UI.
-- **Backend:** Node.js (NestJS/Express) o Python (FastAPI).
-- **Base de datos:** PostgreSQL.
-- **Infra:** Docker + CI/CD (GitHub Actions).
+### Prerrequisitos
+- **Node.js** versión 18 o superior
+- **npm** versión 9 o superior
 
-> Nota: el frontend vive en `app/` hoy; `apps/web` queda reservado si se migra a un monorepo completo.
+### Instalación y Ejecución
+
+1. **Instalar dependencias:**
+   ```bash
+   npm install
+   ```
+
+2. **Ejecutar en modo desarrollo:**
+   ```bash
+   npm run dev
+   ```
+
+3. **Abrir en el navegador:**
+   ```
+   http://localhost:3000
+   ```
+
+4. **Compilar para producción:**
+   ```bash
+   npm run build
+   npm start
+   ```
+
+### 📱 Rutas Principales
+
+- **Página Principal:** `http://localhost:3000`
+- **Reservar Cita:** `http://localhost:3000/booking/service`
+- **Blog:** `http://localhost:3000/blog`
+- **Admin Login:** `http://localhost:3000/admin/login`
+- **Panel Admin:** `http://localhost:3000/admin` (requiere login)
+
+### 🔐 Acceso al Panel Administrativo
+
+Para acceder al dashboard administrativo:
+1. Ir a `http://localhost:3000/admin/login`
+2. Usar cualquier email válido (ej: `admin@test.com`)
+3. Contraseña de 6+ caracteres (ej: `password123`)
+
+**Nota:** El sistema está en modo demo y acepta cualquier combinación válida de credenciales.
+
+## ✨ Características Implementadas
+
+### Página Principal
+- ✅ Hero section con diseño premium
+- ✅ Sección de características premium (Calidad, Puntualidad, Atención)
+- ✅ Catálogo de servicios (Corte Signature, Barba Premium, Experiencia Total)
+- ✅ Presentación del equipo de barberos
+- ✅ Blog con artículos destacados
+- ✅ Información de contacto
+
+### Sistema de Login
+- ✅ Validación de formulario (email y contraseña)
+- ✅ Manejo de errores con mensajes claros
+- ✅ Estados de carga durante autenticación
+- ✅ Auto-logout después de 30 minutos de inactividad
+
+### Dashboard Administrativo
+- ✅ Estadísticas en tiempo real (citas, pagos, barberos)
+- ✅ Indicadores de tendencia (+12%, -8%, etc.)
+- ✅ Seguimiento de ingresos diarios y mensuales
+- ✅ Lista de citas recientes con estados (Confirmada, En progreso, Pendiente)
+- ✅ Acciones rápidas para tareas comunes
+- ✅ Navegación lateral con secciones (Resumen, Servicios, Barberos, Citas, Pagos)
+
+### Imágenes Premium
+- ✅ Ilustraciones SVG personalizadas para todas las secciones
+- ✅ Diseño profesional con paleta de colores oro (#C8A15A) y negro
+- ✅ Efectos de iluminación y gradientes sofisticados
+
+## 🛠️ Stack Tecnológico
+
+- **Frontend:** Next.js 14 (React) + TypeScript
+- **Estilos:** Tailwind CSS
+- **Autenticación:** localStorage (cliente)
+- **Imagenes:** SVG personalizado
+
+## 📂 Estructura del Proyecto
+
+```
+.
+├── app/                    # Aplicación Next.js
+│   ├── page.tsx           # Página principal
+│   ├── admin/             # Panel administrativo
+│   │   ├── login/         # Login de admin
+│   │   └── page.tsx       # Dashboard
+│   ├── booking/           # Flujo de reservas
+│   └── blog/              # Blog
+├── components/            # Componentes reutilizables
+│   ├── Layout.tsx         # Layout principal
+│   └── admin/             # Componentes del admin
+├── public/                # Archivos estáticos
+│   └── images/            # Imágenes SVG premium
+├── lib/                   # Utilidades y hooks
+│   └── admin/             # Lógica de autenticación
+└── styles/                # Estilos globales
+```
+
+## 🎨 Objetivos del Proyecto
+
+- ⚡ Reservar en menos de 1 minuto con flujo claro
+- 💎 Imagen moderna, elegante y profesional
+- 🎯 Posicionamiento como barbería premium en el mercado
+- 🔒 Panel administrativo seguro y funcional
 
 ## Estructura propuesta del proyecto
 ```

@@ -120,6 +120,67 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Premium Features Section - NEW */}
+      <section className="mx-auto max-w-6xl px-6">
+        <div className="overflow-hidden rounded-3xl border-2 border-gold/40 bg-gradient-to-br from-gold/10 via-transparent to-gold/5 p-8 shadow-2xl md:p-12">
+          <div className="text-center">
+            <div className="mb-6 flex items-center justify-center gap-3">
+              <div className="h-px w-16 bg-gradient-to-r from-transparent to-gold"></div>
+              <p className="text-xs font-bold uppercase tracking-[0.5em] text-gold">Experiencia Premium</p>
+              <div className="h-px w-16 bg-gradient-to-l from-transparent to-gold"></div>
+            </div>
+            <h2 className="mb-4 text-3xl font-bold md:text-4xl">
+              Más que una barbería,<br />
+              <span className="text-gold">un destino de estilo</span>
+            </h2>
+            <p className="mx-auto mb-8 max-w-2xl text-base text-white/70 md:text-lg">
+              Dinasty Barber ASF redefine la experiencia de barbería con atención personalizada,
+              productos de lujo y un ambiente sofisticado que te distingue.
+            </p>
+          </div>
+          
+          <div className="grid gap-6 md:grid-cols-3">
+            <div className="rounded-2xl border border-white/10 bg-noir/50 p-6 text-center backdrop-blur">
+              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full border-2 border-gold/40 bg-gold/10">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 4L20 12L28 13L22 19L24 28L16 23L8 28L10 19L4 13L12 12L16 4Z" stroke="#C8A15A" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                </svg>
+              </div>
+              <h3 className="mb-2 text-lg font-semibold text-gold">Calidad Garantizada</h3>
+              <p className="text-sm text-white/60">
+                Solo productos premium y técnicas certificadas para resultados impecables
+              </p>
+            </div>
+            
+            <div className="rounded-2xl border border-white/10 bg-noir/50 p-6 text-center backdrop-blur">
+              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full border-2 border-gold/40 bg-gold/10">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <circle cx="16" cy="16" r="12" stroke="#C8A15A" strokeWidth="2"/>
+                  <path d="M16 8v8l5 3" stroke="#C8A15A" strokeWidth="2" strokeLinecap="round"/>
+                </svg>
+              </div>
+              <h3 className="mb-2 text-lg font-semibold text-gold">Puntualidad Asegurada</h3>
+              <p className="text-sm text-white/60">
+                Respetamos tu tiempo con un sistema de reservas sin esperas innecesarias
+              </p>
+            </div>
+            
+            <div className="rounded-2xl border border-white/10 bg-noir/50 p-6 text-center backdrop-blur">
+              <div className="mx-auto mb-4 flex h-16 w-16 items-center justify-center rounded-full border-2 border-gold/40 bg-gold/10">
+                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16 4C9.4 4 4 9.4 4 16s5.4 12 12 12 12-5.4 12-12S22.6 4 16 4z" stroke="#C8A15A" strokeWidth="2"/>
+                  <path d="M16 10v6l4 4" stroke="#C8A15A" strokeWidth="2" strokeLinecap="round"/>
+                </svg>
+              </div>
+              <h3 className="mb-2 text-lg font-semibold text-gold">Atención Exclusiva</h3>
+              <p className="text-sm text-white/60">
+                Ambiente íntimo y personalizado para una experiencia única
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="servicios" className="mx-auto max-w-6xl space-y-12 px-6">
         <SectionTitle
           eyebrow="Servicios"
