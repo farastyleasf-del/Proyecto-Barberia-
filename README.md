@@ -13,6 +13,8 @@ Proyecto base para construir una experiencia de reserva premium, rápida y confi
 - **Base de datos:** PostgreSQL.
 - **Infra:** Docker + CI/CD (GitHub Actions).
 
+> Nota: el frontend vive en `app/` hoy; `apps/web` queda reservado si se migra a un monorepo completo.
+
 
 ## Estructura propuesta del proyecto
 ```

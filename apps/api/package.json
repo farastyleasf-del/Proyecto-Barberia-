@@ -8,6 +8,7 @@
   },
   "scripts": {
     "dev": "ts-node-dev --esm --respawn --transpile-only src/index.ts",
+
   "scripts": {
 
     "dev": "ts-node-dev --esm --respawn --transpile-only src/index.ts",

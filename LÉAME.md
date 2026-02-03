@@ -9,6 +9,22 @@ Proyecto base para construir una experiencia de reserva premium, rápida y confi
 
 ## Stack recomendado
 - **Frontend:** Next.js (React) + Tailwind CSS + Headless UI.
+- **Backend:** Node.js (TypeScript + Express).
+- **Base de datos:** PostgreSQL.
+
+## Estructura actual del proyecto
+```
+.
+├── app/                   # Frontend Next.js (App Router)
+├── apps
+│   └── api/               # Backend (Node + TypeScript + Express)
+├── components/            # Componentes compartidos
+├── docs/                  # Documentación funcional y técnica
+└── README.md
+```
+
+## Nota
+La aplicación web vive en `/app` (App Router). El backend vive en `/apps/api`.
 - **Backend:** Node.js (NestJS/Express) o Python (FastAPI).
 - **Base de datos:** PostgreSQL.
 - **Infra:** Docker + CI/CD (GitHub Actions).
