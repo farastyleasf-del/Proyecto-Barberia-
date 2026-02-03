@@ -1,27 +1,68 @@
 <svg width="1600" height="700" viewBox="0 0 1600 700" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <rect width="1600" height="700" fill="#0B0B0D"/>
-  <rect x="60" y="80" width="1480" height="540" rx="60" fill="#14151A" stroke="#C8A15A" stroke-width="2"/>
-  <rect x="140" y="180" width="400" height="340" rx="32" fill="#15161B" stroke="#C8A15A" stroke-opacity="0.3"/>
-  <rect x="600" y="180" width="400" height="340" rx="32" fill="#15161B" stroke="#C8A15A" stroke-opacity="0.3"/>
-  <rect x="1060" y="180" width="400" height="340" rx="32" fill="#15161B" stroke="#C8A15A" stroke-opacity="0.3"/>
-  <g transform="translate(210 260)" stroke="#F5F5F7" stroke-width="6" stroke-linecap="round">
-    <path d="M40 0L160 120"/>
-    <path d="M160 0L40 120"/>
-    <circle cx="28" cy="140" r="24" fill="#0B0B0D"/>
-    <circle cx="172" cy="140" r="24" fill="#0B0B0D"/>
+  <defs>
+    <linearGradient id="services-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0B0B0D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a1b1f;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="1600" height="700" fill="url(#services-bg)"/>
+  <rect x="60" y="80" width="1480" height="540" rx="60" fill="#14151A" stroke="#C8A15A" stroke-width="3"/>
+  
+  <!-- Service 1: Corte Signature -->
+  <g transform="translate(140, 180)">
+    <rect width="400" height="340" rx="32" fill="#15161B" stroke="#C8A15A" stroke-opacity="0.4" stroke-width="2"/>
+    <circle cx="200" cy="120" r="70" fill="#C8A15A" opacity="0.15"/>
+    <g transform="translate(130, 60)" stroke="#C8A15A" stroke-width="8" stroke-linecap="round">
+      <path d="M40 0L140 100"/>
+      <path d="M140 0L40 100"/>
+      <circle cx="32" cy="118" r="26" fill="#0B0B0D" stroke="#C8A15A" stroke-width="4"/>
+      <circle cx="148" cy="118" r="26" fill="#0B0B0D" stroke="#C8A15A" stroke-width="4"/>
+    </g>
+    <text x="200" y="260" text-anchor="middle" fill="#C8A15A" font-size="20" font-family="'Manrope', sans-serif" font-weight="bold" letter-spacing="3">CORTE SIGNATURE</text>
+    <text x="200" y="290" text-anchor="middle" fill="#F5F5F7" font-size="14" font-family="'Manrope', sans-serif" letter-spacing="2" opacity="0.7">Precisión milimétrica</text>
   </g>
-  <g transform="translate(700 260)" stroke="#F5F5F7" stroke-width="6" stroke-linecap="round">
-    <rect x="10" y="0" width="180" height="220" rx="24" fill="#0B0B0D" stroke="#C8A15A" stroke-width="3"/>
-    <path d="M30 60H170"/>
-    <path d="M30 110H170"/>
-    <path d="M30 160H170"/>
+  
+  <!-- Service 2: Barba Premium -->
+  <g transform="translate(600, 180)">
+    <rect width="400" height="340" rx="32" fill="#15161B" stroke="#C8A15A" stroke-opacity="0.4" stroke-width="2"/>
+    <circle cx="200" cy="120" r="70" fill="#C8A15A" opacity="0.15"/>
+    <g transform="translate(100, 80)">
+      <rect x="0" y="0" width="200" height="160" rx="28" fill="#0B0B0D" stroke="#C8A15A" stroke-width="4"/>
+      <rect x="12" y="12" width="176" height="136" rx="20" fill="#14151A" opacity="0.6"/>
+      <rect x="30" y="40" width="140" height="18" rx="9" fill="#C8A15A" opacity="0.9"/>
+      <g transform="translate(30, 58)">
+        <rect x="12" y="0" width="4" height="24" fill="#C8A15A"/>
+        <rect x="24" y="0" width="4" height="24" fill="#C8A15A"/>
+        <rect x="36" y="0" width="4" height="24" fill="#C8A15A"/>
+        <rect x="48" y="0" width="4" height="24" fill="#C8A15A"/>
+        <rect x="60" y="0" width="4" height="24" fill="#C8A15A"/>
+        <rect x="72" y="0" width="4" height="24" fill="#C8A15A"/>
+        <rect x="84" y="0" width="4" height="24" fill="#C8A15A"/>
+        <rect x="96" y="0" width="4" height="24" fill="#C8A15A"/>
+        <rect x="108" y="0" width="4" height="24" fill="#C8A15A"/>
+        <rect x="120" y="0" width="4" height="24" fill="#C8A15A"/>
+      </g>
+      <g transform="translate(40, 110)">
+        <rect x="0" y="16" width="120" height="18" rx="9" fill="#C8A15A" opacity="0.9"/>
+        <path d="M 0 25 L 24 0 L 32 0 L 8 25 Z" fill="#C8A15A"/>
+      </g>
+    </g>
+    <text x="200" y="260" text-anchor="middle" fill="#C8A15A" font-size="20" font-family="'Manrope', sans-serif" font-weight="bold" letter-spacing="3">BARBA PREMIUM</text>
+    <text x="200" y="290" text-anchor="middle" fill="#F5F5F7" font-size="14" font-family="'Manrope', sans-serif" letter-spacing="2" opacity="0.7">Ritual de lujo</text>
   </g>
-  <g transform="translate(1160 260)" stroke="#F5F5F7" stroke-width="6" stroke-linecap="round">
-    <path d="M40 0H180"/>
-    <path d="M60 40H160"/>
-    <path d="M80 80H140"/>
-    <path d="M20 120H200"/>
+  
+  <!-- Service 3: Experiencia Total -->
+  <g transform="translate(1060, 180)">
+    <rect width="400" height="340" rx="32" fill="#15161B" stroke="#C8A15A" stroke-opacity="0.4" stroke-width="2"/>
+    <circle cx="200" cy="120" r="70" fill="#C8A15A" opacity="0.15"/>
+    <g transform="translate(140, 60)">
+      <circle cx="60" cy="80" r="55" fill="none" stroke="#C8A15A" stroke-width="6"/>
+      <path d="M 60 25 L 70 55 L 100 55 L 75 75 L 85 105 L 60 85 L 35 105 L 45 75 L 20 55 L 50 55 Z" fill="#C8A15A"/>
+    </g>
+    <text x="200" y="260" text-anchor="middle" fill="#C8A15A" font-size="20" font-family="'Manrope', sans-serif" font-weight="bold" letter-spacing="3">EXPERIENCIA TOTAL</text>
+    <text x="200" y="290" text-anchor="middle" fill="#F5F5F7" font-size="14" font-family="'Manrope', sans-serif" letter-spacing="2" opacity="0.7">Look completo premium</text>
   </g>
-  <text x="50%" y="55%" text-anchor="middle" fill="#F5F5F7" font-size="32" font-family="'Manrope', sans-serif" letter-spacing="6">RITUALES ASF</text>
-  <text x="50%" y="61%" text-anchor="middle" fill="#C8A15A" font-size="14" font-family="'Manrope', sans-serif" letter-spacing="4">CORTE · BARBA · DETALLE</text>
+  
+  <text x="50%" y="12%" text-anchor="middle" fill="#F5F5F7" font-size="36" font-family="'Manrope', sans-serif" font-weight="bold" letter-spacing="8">SERVICIOS PREMIUM</text>
+  <text x="50%" y="16%" text-anchor="middle" fill="#C8A15A" font-size="16" font-family="'Manrope', sans-serif" letter-spacing="5">CORTE · BARBA · ESTILO</text>
 </svg>
