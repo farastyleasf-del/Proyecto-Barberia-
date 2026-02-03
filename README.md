@@ -15,6 +15,7 @@ Proyecto base para construir una experiencia de reserva premium, rápida y confi
 
 > Nota: el frontend vive en `app/` hoy; `apps/web` queda reservado si se migra a un monorepo completo.
 
+
 ## Estructura propuesta del proyecto
 ```
 .
@@ -22,6 +23,8 @@ Proyecto base para construir una experiencia de reserva premium, rápida y confi
 │   └── api/               # Backend (API REST con Express)
 ├── app/                   # Frontend Next.js (incluye /admin)
 ├── apps/web/              # (Futuro) Frontend separado si se decide monorepo completo
+│   ├── web/               # Frontend (Next.js)
+│   └── api/               # Backend (API REST)
 ├── packages
 │   ├── ui/                # Componentes reutilizables
 │   └── config/            # ESLint, Prettier, Tailwind

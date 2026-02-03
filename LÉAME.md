@@ -25,3 +25,35 @@ Proyecto base para construir una experiencia de reserva premium, rápida y confi
 
 ## Nota
 La aplicación web vive en `/app` (App Router). El backend vive en `/apps/api`.
+- **Backend:** Node.js (NestJS/Express) o Python (FastAPI).
+- **Base de datos:** PostgreSQL.
+- **Infra:** Docker + CI/CD (GitHub Actions).
+
+## Estructura propuesta del proyecto
+```
+.
+├── apps
+│   └── api/               # Backend (API REST con Express)
+├── app/                   # Frontend Next.js (incluye /admin)
+├── packages
+│   ├── ui/                # Componentes reutilizables
+│   └── config/            # ESLint, Prettier, Tailwind
+├── docs/                  # Documentación funcional y técnica
+│   ├── architecture.md
+│   ├── booking-logic.md
+│   ├── data-model.md
+│   ├── user-flows.md
+│   ├── admin-panel.md
+│   └── ux-ui-guidelines.md
+└── README.md
+```
+
+## Entregables en esta fase
+- **Modelo de datos** y relaciones principales.
+- **Flujos de usuario** para el proceso de agendamiento.
+- **Arquitectura propuesta** para el sistema.
+- **Componentes principales** del frontend.
+- **Lógica de agendamiento** y reglas de negocio.
+- **Recomendaciones UX/UI** para un diseño premium.
+
+Consulta el directorio `/docs` para el detalle.
