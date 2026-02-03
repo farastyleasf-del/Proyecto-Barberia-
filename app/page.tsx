@@ -74,13 +74,13 @@ export default function HomePage() {
               <div className="text-left">
                 <p className="text-xs uppercase tracking-[0.4em] text-gold">ASF</p>
                 <p className="text-sm uppercase tracking-[0.3em] text-white/70">
-                  Barbería Premium
+                  Dinasty barber ASF
                 </p>
               </div>
             </div>
             <p className="text-xs uppercase tracking-[0.4em] text-gold">Experiencia premium</p>
             <h1 className="text-4xl font-semibold leading-tight md:text-6xl">
-              Barbería Premium con estilo editorial y precisión impecable.
+              Dinasty barber ASF con estilo editorial y precisión impecable.
             </h1>
             <p className="max-w-xl text-base text-white/70 md:text-lg">
               Reservas claras, atención personalizada y una atmósfera sofisticada diseñada para

@@ -29,7 +29,7 @@ export default function Layout({ children }: { children: ReactNode }) {
             </div>
             <div className="leading-tight">
               <p className="text-xs uppercase tracking-[0.5em] text-gold">ASF</p>
-              <p className="text-lg font-semibold tracking-[0.2em]">Barbería Premium</p>
+              <p className="text-lg font-semibold tracking-[0.2em]">Dinasty barber ASF</p>
             </div>
           </Link>
           <nav className="hidden items-center gap-8 text-xs uppercase tracking-[0.3em] text-white/70 md:flex">
@@ -59,7 +59,7 @@ export default function Layout({ children }: { children: ReactNode }) {
         <div className="mx-auto flex max-w-6xl flex-col gap-8 px-6 py-12">
           <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
             <div className="space-y-3">
-              <p className="text-xs uppercase tracking-[0.4em] text-gold">Barbería Premium</p>
+              <p className="text-xs uppercase tracking-[0.4em] text-gold">Dinasty barber ASF</p>
               <p className="text-lg font-semibold">Experiencia exclusiva, cortes precisos.</p>
               <p className="text-sm text-white/60">Av. Principal 123 · +57 320 000 0000 · 09:00 - 20:00</p>
             </div>

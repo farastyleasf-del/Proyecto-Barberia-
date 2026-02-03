@@ -68,6 +68,38 @@ export default function BlogPage() {
           </article>
         ))}
       </div>
+      <section className="rounded-3xl border border-white/10 bg-graphite/70 p-8 shadow-soft">
+        <div className="space-y-4">
+          <p className="text-xs uppercase tracking-[0.4em] text-gold">Califícanos</p>
+          <h2 className="text-2xl font-semibold">Tu opinión impulsa nuestra experiencia premium.</h2>
+          <p className="text-sm text-white/60">
+            Cuéntanos cómo fue tu visita y ayuda a la comunidad ASF a elegir la mejor atención.
+          </p>
+        </div>
+        <div className="mt-6 flex flex-wrap gap-3">
+          {["★", "★", "★", "★", "★"].map((star, index) => (
+            <span
+              key={`${star}-${index}`}
+              className="flex h-12 w-12 items-center justify-center rounded-full border border-gold/40 text-2xl text-gold"
+            >
+              {star}
+            </span>
+          ))}
+        </div>
+        <div className="mt-6 grid gap-4 md:grid-cols-[1fr_auto]">
+          <input
+            type="text"
+            placeholder="Escribe tu comentario..."
+            className="w-full rounded-full border border-white/10 bg-noir px-5 py-3 text-sm text-white/80 placeholder:text-white/40"
+          />
+          <button
+            type="button"
+            className="rounded-full border border-gold px-6 py-3 text-xs font-semibold uppercase tracking-[0.25em] text-gold"
+          >
+            Enviar
+          </button>
+        </div>
+      </section>
     </div>
   );
 }
