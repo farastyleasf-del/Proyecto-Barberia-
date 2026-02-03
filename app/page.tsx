@@ -62,13 +62,15 @@ export default function HomePage() {
         <div className="mx-auto grid max-w-6xl gap-10 px-6 py-20 md:grid-cols-[1.1fr_0.9fr] md:items-center">
           <div className="relative z-10 space-y-8">
             <div className="flex items-center gap-4">
-              <Image
-                src="/logo-asf.svg"
-                alt="Logo ASF"
-                width={56}
-                height={56}
-                className="h-14 w-14"
-              />
+              <div className="flex h-16 w-16 items-center justify-center rounded-full border border-gold/40 bg-white/5">
+                <Image
+                  src="/logo-asf.svg"
+                  alt="Logo ASF"
+                  width={44}
+                  height={44}
+                  className="h-11 w-11"
+                />
+              </div>
               <div className="text-left">
                 <p className="text-xs uppercase tracking-[0.4em] text-gold">ASF</p>
                 <p className="text-sm uppercase tracking-[0.3em] text-white/70">

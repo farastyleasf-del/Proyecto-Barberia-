@@ -17,14 +17,16 @@ export default function Layout({ children }: { children: ReactNode }) {
       <header className="border-b border-white/10 bg-noir/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-6">
           <Link href="/" className="flex items-center gap-4">
-            <Image
-              src="/logo-asf.svg"
-              alt="Logo ASF"
-              width={48}
-              height={48}
-              className="h-12 w-12"
-              priority
-            />
+            <div className="flex h-14 w-14 items-center justify-center rounded-full border border-gold/40 bg-white/5">
+              <Image
+                src="/logo-asf.svg"
+                alt="Logo ASF"
+                width={40}
+                height={40}
+                className="h-10 w-10"
+                priority
+              />
+            </div>
             <div className="leading-tight">
               <p className="text-xs uppercase tracking-[0.5em] text-gold">ASF</p>
               <p className="text-lg font-semibold tracking-[0.2em]">Barbería Premium</p>
