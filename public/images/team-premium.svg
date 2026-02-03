@@ -1,0 +1,8 @@
+<svg width="900" height="1100" viewBox="0 0 900 1100" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="900" height="1100" fill="#0B0B0D"/>
+  <rect x="50" y="50" width="800" height="1000" rx="48" fill="#17181C" stroke="#C8A15A" stroke-width="2"/>
+  <circle cx="300" cy="420" r="120" fill="#C8A15A" fill-opacity="0.18"/>
+  <circle cx="600" cy="520" r="140" fill="#C8A15A" fill-opacity="0.14"/>
+  <text x="50%" y="70%" text-anchor="middle" fill="#F5F5F7" font-size="32" font-family="'Manrope', sans-serif" letter-spacing="6">EQUIPO</text>
+  <text x="50%" y="75%" text-anchor="middle" fill="#C8A15A" font-size="12" font-family="'Manrope', sans-serif" letter-spacing="4">EXPERTO</text>
+</svg>

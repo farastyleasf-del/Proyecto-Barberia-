@@ -13,7 +13,6 @@ Proyecto base para construir una experiencia de reserva premium, rápida y confi
 - **Base de datos:** PostgreSQL.
 
 ## Estructura actual del proyecto
-
 ```
 .
 ├── app/                   # Frontend Next.js (App Router)
@@ -22,20 +21,7 @@ Proyecto base para construir una experiencia de reserva premium, rápida y confi
 ├── components/            # Componentes compartidos
 ├── docs/                  # Documentación funcional y técnica
 └── README.md
-
 ```
 
-
 ## Nota
-La aplicación web vive en `/app` (App Router).  
-El backend vive en `/apps/api`.
-
-## Entregables en esta fase
-- **Modelo de datos** y relaciones principales.
-- **Flujos de usuario** para el proceso de agendamiento.
-- **Arquitectura del sistema**.
-- **Componentes principales** del frontend.
-- **Lógica de agendamiento** y reglas de negocio.
-- **Recomendaciones UX/UI** para un diseño premium.
-
-Consulta el directorio `/docs` para el detalle técnico y funcional.
+La aplicación web vive en `/app` (App Router). El backend vive en `/apps/api`.

@@ -1,28 +1,47 @@
+import Image from "next/image";
 import Link from "next/link";
 import type { ReactNode } from "react";
 
 import "../styles/globals.css";
+import FloatingActions from "./FloatingActions";
+
+const socialLinks = [
+  { label: "Instagram", href: "https://instagram.com" },
+  { label: "TikTok", href: "https://tiktok.com" },
+  { label: "Facebook", href: "https://facebook.com" }
+];
 
 export default function Layout({ children }: { children: ReactNode }) {
   return (
     <div className="min-h-screen bg-noir text-white">
-      <header className="border-b border-white/10">
-        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-6">
-          <Link href="/" className="text-lg font-semibold tracking-[0.2em]">
-            BARBERÍA IMPERIAL
+      <header className="border-b border-white/10 bg-noir/90 backdrop-blur">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-6 px-6 py-6">
+          <Link href="/" className="flex items-center gap-4">
+            <Image
+              src="/logo-asf.svg"
+              alt="Logo ASF"
+              width={48}
+              height={48}
+              className="h-12 w-12"
+              priority
+            />
+            <div className="leading-tight">
+              <p className="text-xs uppercase tracking-[0.5em] text-gold">ASF</p>
+              <p className="text-lg font-semibold tracking-[0.2em]">Barbería Premium</p>
+            </div>
           </Link>
-          <nav className="hidden items-center gap-8 text-sm text-white/70 md:flex">
+          <nav className="hidden items-center gap-8 text-xs uppercase tracking-[0.3em] text-white/70 md:flex">
             <Link href="/booking/service" className="hover:text-white">
               Reservar
             </Link>
-            <Link href="#servicios" className="hover:text-white">
+            <Link href="/#servicios" className="hover:text-white">
               Servicios
             </Link>
-            <Link href="#equipo" className="hover:text-white">
+            <Link href="/#equipo" className="hover:text-white">
               Equipo
             </Link>
-            <Link href="#contacto" className="hover:text-white">
-              Contacto
+            <Link href="/blog" className="hover:text-white">
+              Blog
             </Link>
           </nav>
           <Link
@@ -34,12 +53,38 @@ export default function Layout({ children }: { children: ReactNode }) {
         </div>
       </header>
       <main>{children}</main>
-      <footer className="border-t border-white/10">
-        <div className="mx-auto flex max-w-6xl flex-col gap-4 px-6 py-10 text-sm text-white/60 md:flex-row md:items-center md:justify-between">
-          <p>Barbería Imperial · Experiencia premium en cada visita.</p>
-          <p>Av. Principal 123 · +57 320 000 0000 · 09:00 - 20:00</p>
+      <footer className="border-t border-white/10 bg-graphite">
+        <div className="mx-auto flex max-w-6xl flex-col gap-8 px-6 py-12">
+          <div className="flex flex-col gap-6 md:flex-row md:items-center md:justify-between">
+            <div className="space-y-3">
+              <p className="text-xs uppercase tracking-[0.4em] text-gold">Barbería Premium</p>
+              <p className="text-lg font-semibold">Experiencia exclusiva, cortes precisos.</p>
+              <p className="text-sm text-white/60">Av. Principal 123 · +57 320 000 0000 · 09:00 - 20:00</p>
+            </div>
+            <div className="flex flex-col gap-3 text-sm text-white/60">
+              <p className="text-xs uppercase tracking-[0.3em] text-white/40">Redes</p>
+              <div className="flex gap-4">
+                {socialLinks.map((link) => (
+                  <Link
+                    key={link.label}
+                    href={link.href}
+                    className="rounded-full border border-white/10 px-4 py-2 text-xs uppercase tracking-[0.3em] text-white/70 hover:text-white"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    {link.label}
+                  </Link>
+                ))}
+              </div>
+            </div>
+          </div>
+          <div className="flex flex-col gap-2 text-xs text-white/40 md:flex-row md:items-center md:justify-between">
+            <p>© 2024 ASF Barbería Premium. Todos los derechos reservados.</p>
+            <p>Diseñado para una experiencia moderna, elegante y confiable.</p>
+          </div>
         </div>
       </footer>
+      <FloatingActions />
     </div>
   );
 }

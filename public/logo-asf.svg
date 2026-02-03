@@ -1,0 +1,11 @@
+<svg width="240" height="240" viewBox="0 0 240 240" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="240" height="240" rx="42" fill="#0B0B0D"/>
+  <rect x="12" y="12" width="216" height="216" rx="36" stroke="#C8A15A" stroke-width="2"/>
+  <g fill="#F5F5F7">
+    <path d="M120 36L198 170H42L120 36Z" fill="#1C1D23"/>
+    <path d="M120 58L172 150H68L120 58Z" fill="#0B0B0D"/>
+    <path d="M120 76L152 130H88L120 76Z" fill="#F5F5F7"/>
+  </g>
+  <text x="50%" y="156" text-anchor="middle" fill="#F5F5F7" font-size="52" font-family="'Manrope', sans-serif" font-weight="600" letter-spacing="6">ASF</text>
+  <text x="50%" y="188" text-anchor="middle" fill="#C8A15A" font-size="12" font-family="'Manrope', sans-serif" letter-spacing="4">BARBERÍA</text>
+</svg>
